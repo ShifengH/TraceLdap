@@ -1,0 +1,107 @@
+##############################################
+#
+#   Fixed entries of the CUDB predefined DIT.
+#
+##############################################
+
+# Root entry.
+dn:dc=telcel
+objectclass:top
+objectclass:CUDBdcObject
+dc:telcel
+
+
+# Admin entry
+
+dn:ou=admin,dc=telcel
+objectclass:top
+objectclass:organizationalUnit
+ou:admin
+
+
+# Proxy user entry
+
+dn:cudbUser=ericssonuser,ou=admin,dc=telcel
+cudbUser:ericssonuser
+cudbUserPassword:135t3rday*walrus
+objectclass:CUDBLdapUser
+
+
+# Msc Common data entry.
+
+dn:ou=mscCommonData,dc=telcel
+objectclass:top
+objectclass:organizationalUnit
+ou:mscCommonData
+
+
+# Service Common data entry.
+
+dn:ou=servCommonData,dc=telcel
+objectclass:top
+objectclass:organizationalUnit
+ou:servCommonData
+
+
+# MultiSCs entry.
+
+dn:ou=multiSCs,dc=telcel
+objectclass:top
+objectclass:organizationalUnit
+ou:multiSCs
+
+
+# Associations entry.
+
+dn:ou=associations,dc=telcel
+objectclass:top
+objectclass:organizationalUnit
+ou:associations
+
+
+# Identities entry.
+
+dn:ou=identities,dc=telcel
+objectclass:top
+objectclass:organizationalUnit
+ou:identities
+
+
+# MSISDN.
+
+dn:dc=MSISDN, ou=identities,dc=telcel
+objectclass:top
+objectclass:CUDBdcObject
+dc:MSISDN
+
+
+# IMSI.
+
+dn:dc=IMSI, ou=identities,dc=telcel
+objectclass:top
+objectclass:CUDBdcObject
+dc:IMSI
+
+
+# IMPU.
+
+dn:dc=IMPU, ou=identities,dc=telcel
+objectclass:top
+objectclass:CUDBdcObject
+dc:IMPU
+
+
+# IMPI.
+
+dn:dc=IMPI, ou=identities,dc=telcel
+objectclass:top
+objectclass:CUDBdcObject
+dc:IMPI
+
+
+# IPADDRESS.
+
+dn:dc=IPADDRESS, ou=identities,dc=telcel
+objectclass:top
+objectclass:CUDBdcObject
+dc:IPADDRESS

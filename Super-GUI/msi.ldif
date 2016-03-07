@@ -1,0 +1,7 @@
+dn: serv=Identities,mscId=aaaaaaa001aaaaaaa012345678901111,ou=multiSCs,dc=telcel
+objectClass:mscIdentities
+CDC:3
+IMSI:334020239999918
+imsiMask:'0000000000100010'B
+MSISDN:5510106563
+
